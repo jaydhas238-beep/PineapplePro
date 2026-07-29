@@ -161,3 +161,61 @@
     line-height:1.8;
 
 }
+
+/*==================================
+          CORE VALUES
+==================================*/
+
+.values{
+
+    padding:120px 0;
+
+}
+
+.values-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+.value-card{
+
+    padding:45px;
+
+    border:1px solid var(--border);
+
+    border-radius:24px;
+
+    background:var(--surface);
+
+    transition:.35s;
+
+}
+
+.value-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#fff;
+
+}
+
+.value-card h3{
+
+    font-size:1.6rem;
+
+    margin-bottom:18px;
+
+}
+
+.value-card p{
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
