@@ -3,3 +3,238 @@
 =========================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    min-height:100vh;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+button,
+input,
+textarea{
+    font:inherit;
+    border:none;
+    outline:none;
+    background:none;
+}
+
+button{
+    cursor:pointer;
+}
+
+
+/* ===========================
+   ROOT VARIABLES
+=========================== */
+
+:root{
+
+    /* Colors */
+
+    --bg:#050505;
+    --surface:#111111;
+    --surface-light:#181818;
+    --border:#2b2b2b;
+
+    --white:#ffffff;
+    --gray:#9f9f9f;
+    --light-gray:#d5d5d5;
+
+    /* Layout */
+
+    --container:1400px;
+    --radius:22px;
+
+    /* Transition */
+
+    --transition:.35s ease;
+
+    /* Shadows */
+
+    --shadow:0 10px 40px rgba(0,0,0,.35);
+
+}
+
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+
+    background:var(--bg);
+
+    color:var(--white);
+
+    font-family:'Inter',sans-serif;
+
+    overflow-x:hidden;
+
+    line-height:1.6;
+
+    -webkit-font-smoothing:antialiased;
+
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+
+    width:min(92%,var(--container));
+
+    margin-inline:auto;
+
+}
+
+/* ===========================
+   SECTION
+=========================== */
+
+section{
+
+    padding:120px 0;
+
+}
+/* ===========================
+   TYPOGRAPHY
+=========================== */
+
+.section-tag{
+
+    color:var(--gray);
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:.85rem;
+
+    margin-bottom:1rem;
+
+}
+
+.section-title{
+
+    font-size:clamp(2.5rem,6vw,5rem);
+
+    font-weight:800;
+
+    line-height:1.05;
+
+    margin-bottom:1.5rem;
+
+}
+
+.section-description{
+
+    max-width:700px;
+
+    color:var(--gray);
+
+    font-size:1.1rem;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:16px 34px;
+
+    border-radius:999px;
+
+    border:1px solid var(--white);
+
+    color:var(--white);
+
+    transition:var(--transition);
+
+    font-weight:600;
+
+}
+
+.btn:hover{
+
+    background:var(--white);
+
+    color:var(--bg);
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0a0a0a;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#444;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#666;
+
+}
+
+/* ===========================
+   SELECTION
+=========================== */
+
+::selection{
+
+    background:#ffffff;
+
+    color:#050505;
+
+}
