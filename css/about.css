@@ -383,3 +383,43 @@
     line-height:1.8;
 
 }
+
+.services-hero{
+
+    padding:180px 0 140px;
+
+    text-align:center;
+
+}
+
+.services-hero .hero-title{
+
+    font-size:clamp(3.5rem,8vw,6rem);
+
+    line-height:1;
+
+    margin:30px 0;
+
+}
+
+.services-hero .hero-description{
+
+    max-width:720px;
+
+    margin:0 auto 40px;
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
