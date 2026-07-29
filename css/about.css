@@ -1,1 +1,29 @@
+.about-hero{
 
+    padding:180px 0 140px;
+
+    text-align:center;
+
+}
+
+.about-hero .hero-title{
+
+    font-size:clamp(3.5rem,8vw,6rem);
+
+    line-height:1;
+
+    margin:30px 0;
+
+}
+
+.about-hero .hero-description{
+
+    max-width:700px;
+
+    margin:0 auto 40px;
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
