@@ -219,3 +219,73 @@
     line-height:1.8;
 
 }
+
+/*==================================
+        FOUNDER
+==================================*/
+
+.founder{
+
+    padding:120px 0;
+
+}
+
+.founder-grid{
+
+    display:grid;
+
+    grid-template-columns:.9fr 1.1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.founder-image img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:28px;
+
+    border:1px solid var(--border);
+
+}
+
+.founder-content blockquote{
+
+    font-size:1.7rem;
+
+    line-height:1.7;
+
+    font-weight:500;
+
+    margin-bottom:30px;
+
+}
+
+.founder-content p{
+
+    color:var(--gray);
+
+    line-height:1.9;
+
+    margin-bottom:40px;
+
+}
+
+.founder-info h3{
+
+    font-size:1.8rem;
+
+    margin-bottom:6px;
+
+}
+
+.founder-info span{
+
+    color:var(--gray);
+
+}
