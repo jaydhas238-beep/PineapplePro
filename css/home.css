@@ -207,3 +207,19 @@
     margin-bottom:20px;
 
 }
+
+/* ==========================
+   WHY US HEADING
+========================== */
+
+.why-us .section-title{
+
+    font-size: clamp(2.8rem, 5vw, 4rem);
+
+    line-height: 1.1;
+
+    max-width: 900px;
+
+    margin: 0 auto 24px;
+
+}
