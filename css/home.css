@@ -223,3 +223,54 @@
     margin: 0 auto 24px;
 
 }
+
+
+.industries{
+
+    padding:120px 0;
+
+}
+
+.industry-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.industry-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:32px 40px;
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    background:var(--surface);
+
+    transition:.35s;
+
+    font-size:1.4rem;
+
+    font-weight:600;
+
+}
+
+.industry-item:hover{
+
+    transform:translateX(8px);
+
+    border-color:#fff;
+
+    background:#181818;
+
+}
