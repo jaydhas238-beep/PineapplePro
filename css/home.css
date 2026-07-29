@@ -91,3 +91,63 @@
     align-items:center;
 
 }
+
+/*==================================
+        TRUSTED
+==================================*/
+
+.trusted{
+
+    padding:70px 0;
+
+    border-top:1px solid var(--border);
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.trusted-title{
+
+    text-align:center;
+
+    color:var(--gray);
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    margin-bottom:45px;
+
+}
+
+.brand-slider{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:60px;
+
+    opacity:.7;
+
+}
+
+.brand-slider img{
+
+    height:40px;
+
+    filter:grayscale(100%);
+
+    transition:.3s;
+
+}
+
+.brand-slider img:hover{
+
+    opacity:1;
+
+    filter:none;
+
+}
