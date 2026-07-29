@@ -91,3 +91,98 @@
     }
 
 }
+/* ==================================================
+                RESPONSIVE DESIGN
+        PineapplePro Website
+================================================== */
+
+
+/* ==========================================
+            LARGE TABLETS (≤ 991px)
+========================================== */
+
+@media (max-width:991px){
+
+    .container{
+        width:92%;
+    }
+
+    section{
+        padding:100px 0;
+    }
+
+    .hero-title{
+        font-size:4.5rem;
+    }
+
+    .section-title{
+        font-size:3rem;
+    }
+
+}
+
+
+/* ==========================================
+                MOBILE (≤ 768px)
+========================================== */
+
+@media (max-width:768px){
+
+    .container{
+        width:92%;
+    }
+
+    section{
+        padding:80px 0;
+    }
+
+    .hero-title{
+        font-size:3rem;
+        line-height:1.05;
+    }
+
+    .section-title{
+        font-size:2.4rem;
+        line-height:1.2;
+    }
+
+    .section-heading{
+        margin-bottom:50px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .btn{
+        width:100%;
+        justify-content:center;
+    }
+
+}
+
+
+/* ==========================================
+            SMALL MOBILE (≤ 480px)
+========================================== */
+
+@media (max-width:480px){
+
+    .container{
+        width:94%;
+    }
+
+    .hero-title{
+        font-size:2.5rem;
+    }
+
+    .section-title{
+        font-size:2rem;
+    }
+
+    .section-tag{
+        font-size:.8rem;
+    }
+
+}
