@@ -40,8 +40,16 @@ img{
     }
 
     .section-title{
-        font-size:3rem;
-    }
+
+    font-size:2.2rem;
+
+}
+
+.section-description{
+
+    font-size:.95rem;
+
+}
 
     /* Navbar */
 
@@ -51,7 +59,7 @@ img{
         top:0;
         right:-100%;
 
-        width:320px;
+       width:min(85vw,320px);
         height:100vh;
 
         background:#111;
@@ -121,12 +129,10 @@ img{
 
     /* Hero */
 
-    .hero{
-         min-height:55vh;
-        padding:110px 0 60px;
-        padding-bottom:80px;
-    }
-
+   .hero{
+    min-height:auto;
+    padding:120px 0 70px;
+}
     .hero-container{
         grid-template-columns:1fr;
         gap:40px;
@@ -147,17 +153,14 @@ img{
         font-size:1rem;
     }
 
-    .hero-buttons{
-        flex-direction:column;
-        gap:16px;
-        align-items:stretch;
-        width:100%;
-    }
+   .hero-buttons{
+    width:100%;
+    gap:14px;
+}
 
-    .btn{
-        width:100%;
-        justify-content:center;
-    }
+.hero-buttons .btn{
+    width:100%;
+}
 
     /* Hide decorative hero illustration */
 
@@ -201,9 +204,17 @@ img{
     .testimonial-card,
     .industry-card,
     .stat-card{
-        padding:28px;
+       padding:24px;
+border-radius:20px;
     }
 
+  .nav-container{
+    padding:16px 20px;
+}
+  .logo img{
+    height:42px;
+    width:auto;
+}
 }
 
 /* ==================================================
@@ -245,5 +256,16 @@ img{
     .testimonial-card{
         padding:24px;
     }
+
+}
+.grid{
+
+    gap:24px;
+
+}
+
+.btn{
+
+    min-height:50px;
 
 }
