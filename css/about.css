@@ -289,3 +289,97 @@
     color:var(--gray);
 
 }
+
+/*==================================
+          TIMELINE
+==================================*/
+
+.timeline{
+
+    padding:120px 0;
+
+}
+
+.timeline-wrapper{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:40px;
+
+    margin-top:80px;
+
+}
+
+.timeline-line{
+
+    position:absolute;
+
+    top:20px;
+
+    left:0;
+
+    width:100%;
+
+    height:2px;
+
+    background:var(--border);
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    padding-top:50px;
+
+}
+
+.timeline-dot{
+
+    position:absolute;
+
+    top:12px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+}
+
+.year{
+
+    display:inline-block;
+
+    font-size:.9rem;
+
+    letter-spacing:2px;
+
+    color:var(--gray);
+
+    margin-bottom:18px;
+
+}
+
+.timeline-item h3{
+
+    margin-bottom:15px;
+
+    font-size:1.4rem;
+
+}
+
+.timeline-item p{
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
