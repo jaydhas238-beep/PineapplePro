@@ -122,8 +122,8 @@ img{
     /* Hero */
 
     .hero{
-        min-height:auto;
-        padding-top:130px;
+         min-height:55vh;
+        padding:110px 0 60px;
         padding-bottom:80px;
     }
 
