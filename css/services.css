@@ -175,3 +175,22 @@
     border:1px solid var(--border);
 
 }
+/* Alternate layout */
+
+.service-detail.reverse .service-detail-grid{
+
+    grid-template-columns:.9fr 1.1fr;
+
+}
+
+.service-detail.reverse .service-image{
+
+    order:1;
+
+}
+
+.service-detail.reverse .service-content{
+
+    order:2;
+
+}
