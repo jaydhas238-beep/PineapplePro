@@ -27,3 +27,71 @@
     line-height:1.8;
 
 }
+
+/*==================================
+        OUR STORY
+==================================*/
+
+.our-story{
+
+    padding:120px 0;
+
+}
+
+.story-grid{
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.story-content p{
+
+    color:var(--gray);
+
+    line-height:1.9;
+
+    margin-bottom:24px;
+
+}
+
+.story-highlights{
+
+    display:flex;
+
+    gap:50px;
+
+    margin-top:50px;
+
+}
+
+.story-highlights h3{
+
+    font-size:2.4rem;
+
+    margin-bottom:8px;
+
+}
+
+.story-highlights span{
+
+    color:var(--gray);
+
+}
+
+.story-image img{
+
+    width:100%;
+
+    border-radius:24px;
+
+    border:1px solid var(--border);
+
+    display:block;
+
+}
