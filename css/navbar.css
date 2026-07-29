@@ -102,3 +102,40 @@
     padding:14px 28px;
 
 }
+
+/*=========================
+      MENU TOGGLE
+=========================*/
+
+.menu-toggle{
+
+    display:none;
+
+    width:45px;
+    height:45px;
+
+    cursor:pointer;
+
+    background:none;
+
+    border:none;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    gap:6px;
+
+}
+
+.menu-toggle span{
+
+    width:26px;
+
+    height:2px;
+
+    background:#fff;
+
+    transition:.35s;
+
+}
