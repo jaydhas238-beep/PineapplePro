@@ -1,105 +1,25 @@
-
-/* ==========================================
-   MOBILE
-========================================== */
-
-@media (max-width: 768px){
-
-    .hero{
-        padding-top: 140px;
-        min-height: auto;
-        padding-bottom: 80px;
-    }
-
-    .hero-container{
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
-
-    .hero-content{
-        max-width: 100%;
-    }
-
-    .hero h1{
-        font-size: clamp(2.8rem, 12vw, 4rem);
-        line-height: 1;
-    }
-
-    .hero p{
-        font-size: 1rem;
-    }
-
-    .hero-buttons{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .hero-visual{
-        display: none;
-    }
-
-}
-
-@media(max-width:991px){
-
-    .nav-links{
-
-        position:fixed;
-
-        top:0;
-
-        right:-100%;
-
-        width:300px;
-
-        height:100vh;
-
-        background:#0d0d0d;
-
-        display:flex;
-
-        flex-direction:column;
-
-        justify-content:center;
-
-        align-items:center;
-
-        gap:40px;
-
-        transition:.4s;
-
-        z-index:999;
-
-    }
-
-    .nav-links.active{
-
-        right:0;
-
-    }
-
-    .menu-toggle{
-
-        display:flex;
-
-    }
-
-    .nav-btn{
-
-        display:none;
-
-    }
-
-}
 /* ==================================================
                 RESPONSIVE DESIGN
-        PineapplePro Website
+              PineapplePro Website
 ================================================== */
 
+/* Prevent horizontal scrolling */
 
-/* ==========================================
-            LARGE TABLETS (≤ 991px)
-========================================== */
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+/* ==================================================
+                TABLETS (≤991px)
+================================================== */
 
 @media (max-width:991px){
 
@@ -111,20 +31,83 @@
         padding:100px 0;
     }
 
-    .hero-title{
+    /* Typography */
+
+    .hero-title,
+    .hero h1{
         font-size:4.5rem;
+        line-height:1.1;
     }
 
     .section-title{
         font-size:3rem;
     }
 
+    /* Navbar */
+
+    .nav-links{
+
+        position:fixed;
+        top:0;
+        right:-100%;
+
+        width:320px;
+        height:100vh;
+
+        background:#111;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        gap:35px;
+
+        transition:.4s ease;
+
+        z-index:999;
+    }
+
+    .nav-links.active{
+        right:0;
+    }
+
+    .menu-toggle{
+        display:flex;
+    }
+
+    .nav-btn{
+        display:none;
+    }
+
+    /* Two column layouts */
+
+    .hero-container,
+    .about-grid,
+    .story-grid,
+    .founder-grid,
+    .service-detail-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+        gap:60px;
+    }
+
+    /* Three column grids */
+
+    .services-grid,
+    .products-grid,
+    .stats-grid,
+    .why-services-grid,
+    .industries-grid,
+    .testimonial-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
 }
 
-
-/* ==========================================
-                MOBILE (≤ 768px)
-========================================== */
+/* ==================================================
+                MOBILE (≤768px)
+================================================== */
 
 @media (max-width:768px){
 
@@ -136,23 +119,39 @@
         padding:80px 0;
     }
 
-    .hero-title{
+    /* Hero */
+
+    .hero{
+        min-height:auto;
+        padding-top:130px;
+        padding-bottom:80px;
+    }
+
+    .hero-container{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .hero-content{
+        max-width:100%;
+        text-align:center;
+    }
+
+    .hero-title,
+    .hero h1{
         font-size:3rem;
         line-height:1.05;
     }
 
-    .section-title{
-        font-size:2.4rem;
-        line-height:1.2;
-    }
-
-    .section-heading{
-        margin-bottom:50px;
+    .hero p{
+        font-size:1rem;
     }
 
     .hero-buttons{
         flex-direction:column;
+        gap:16px;
         align-items:stretch;
+        width:100%;
     }
 
     .btn{
@@ -160,12 +159,56 @@
         justify-content:center;
     }
 
+    /* Hide decorative hero illustration */
+
+    .hero-visual{
+        display:none;
+    }
+
+    /* Section headings */
+
+    .section-heading{
+        margin-bottom:50px;
+        text-align:center;
+    }
+
+    .section-title{
+        font-size:2.4rem;
+        line-height:1.2;
+    }
+
+    /* All grids become single column */
+
+    .services-grid,
+    .products-grid,
+    .stats-grid,
+    .why-grid,
+    .why-services-grid,
+    .industries-grid,
+    .testimonial-grid,
+    .mission-grid,
+    .values-grid,
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* Cards */
+
+    .service-card,
+    .why-card,
+    .why-service-card,
+    .product-card,
+    .testimonial-card,
+    .industry-card,
+    .stat-card{
+        padding:28px;
+    }
+
 }
 
-
-/* ==========================================
-            SMALL MOBILE (≤ 480px)
-========================================== */
+/* ==================================================
+              SMALL MOBILE (≤480px)
+================================================== */
 
 @media (max-width:480px){
 
@@ -173,7 +216,12 @@
         width:94%;
     }
 
-    .hero-title{
+    .hero{
+        padding-top:120px;
+    }
+
+    .hero-title,
+    .hero h1{
         font-size:2.5rem;
     }
 
@@ -183,6 +231,19 @@
 
     .section-tag{
         font-size:.8rem;
+        letter-spacing:2px;
+    }
+
+    .btn{
+        padding:14px 18px;
+        font-size:.95rem;
+    }
+
+    .service-card,
+    .why-card,
+    .why-service-card,
+    .testimonial-card{
+        padding:24px;
     }
 
 }
