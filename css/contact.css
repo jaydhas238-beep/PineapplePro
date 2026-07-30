@@ -1,1 +1,41 @@
+/*==================================
+        CONTACT HEADER
+==================================*/
 
+.contact-header{
+
+    padding:170px 0 100px;
+
+    text-align:center;
+
+}
+
+.contact-header .section-tag{
+
+    display:inline-block;
+
+    margin-bottom:22px;
+
+}
+
+.contact-header .section-title{
+
+    max-width:750px;
+
+    margin:0 auto 24px;
+
+}
+
+.contact-header .section-description{
+
+    max-width:720px;
+
+    margin:0 auto;
+
+    color:var(--gray);
+
+    line-height:1.9;
+
+    font-size:1.08rem;
+
+}
