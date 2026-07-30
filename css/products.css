@@ -1,1 +1,42 @@
 
+/*==================================
+        PRODUCTS HEADER
+==================================*/
+
+.products-header{
+
+    padding:170px 0 100px;
+
+    text-align:center;
+
+}
+
+.products-header .section-tag{
+
+    display:inline-block;
+
+    margin-bottom:22px;
+
+}
+
+.products-header .section-title{
+
+    max-width:850px;
+
+    margin:0 auto 24px;
+
+}
+
+.products-header .section-description{
+
+    max-width:760px;
+
+    margin:0 auto;
+
+    color:var(--gray);
+
+    line-height:1.9;
+
+    font-size:1.08rem;
+
+}
