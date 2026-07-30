@@ -1,7 +1,6 @@
-
 const whatsappBtn = document.getElementById("whatsappBtn");
 
-whatsappBtn.addEventListener("click", () => {
+whatsappBtn.addEventListener("click", function () {
 
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
@@ -22,8 +21,10 @@ Service: ${service}
 Message:
 ${message}`;
 
+    const whatsappNumber = "917972219776";
+
     window.open(
-        `https://wa.me/917972219776?text=${encodeURIComponent(text)}`,
+        `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`,
         "_blank"
     );
 
