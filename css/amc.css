@@ -1,5 +1,60 @@
 
 /*==================================
+            AMC HEADER
+==================================*/
+
+.amc-header{
+
+    padding:170px 0 120px;
+
+    text-align:center;
+
+}
+
+.amc-header .section-title{
+
+    max-width:800px;
+
+    margin:20px auto;
+
+}
+
+.amc-header .section-description{
+
+    max-width:760px;
+
+    margin:0 auto;
+
+    color:var(--gray);
+
+    line-height:1.9;
+
+}
+
+.header-buttons{
+
+    margin-top:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+@media(max-width:768px){
+
+    .amc-header{
+
+        padding:140px 0 90px;
+
+    }
+
+}
+/*==================================
         AMC SERVICES
 ==================================*/
 
