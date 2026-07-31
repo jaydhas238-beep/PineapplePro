@@ -5,6 +5,18 @@
 /* Laptop */
 @media (max-width:1200px){
 
+        @media (max-width:1200px){
+
+    .brand-slider{
+        gap:60px;
+    }
+
+    .brand-slider img{
+        height:36px;
+    }
+
+}
+
 }
 
 /* Tablet */
@@ -145,6 +157,29 @@
 }
 
 }
+
+@media (max-width:768px){
+
+    .trusted{
+        padding:60px 0;
+    }
+
+    .trusted-title{
+        font-size:0.95rem;
+        margin-bottom:25px;
+    }
+
+    .brand-slider{
+        gap:30px;
+        justify-content:flex-start;
+        padding-bottom:10px;
+    }
+
+    .brand-slider img{
+        height:26px;
+    }
+
+}
 /* Small Mobile */
 @media (max-width:480px){
 
@@ -220,6 +255,35 @@
 
         z-index:1001;
 
+    }
+
+}
+
+@media (max-width:992px){
+
+    .trusted{
+        padding:70px 0;
+    }
+
+    .trusted-title{
+        font-size:1rem;
+        margin-bottom:35px;
+    }
+
+    .brand-slider{
+        gap:45px;
+        overflow-x:auto;
+        scrollbar-width:none;
+        -ms-overflow-style:none;
+    }
+
+    .brand-slider::-webkit-scrollbar{
+        display:none;
+    }
+
+    .brand-slider img{
+        height:32px;
+        flex-shrink:0;
     }
 
 }
