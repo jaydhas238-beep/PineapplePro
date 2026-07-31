@@ -383,4 +383,40 @@
     line-height:1.8;
 
 }
+/*=============================
+        PREMIUM CTA
+=============================*/
 
+.premium-cta{
+
+    padding:140px 0 0;
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+.cta-card{
+
+    background:linear-gradient(
+        145deg,
+        rgba(255,255,255,.03),
+        rgba(255,255,255,.015)
+    );
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:36px;
+
+    padding:90px 70px;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
