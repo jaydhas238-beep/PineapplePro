@@ -388,3 +388,204 @@
 }
 
 }
+
+
+/*==================================
+        PARTNERS
+==================================*/
+
+.partners{
+
+    padding:140px 0;
+
+    background:#050505;
+
+}
+
+.section-header{
+
+    text-align:center;
+
+    max-width:820px;
+
+    margin:0 auto 80px;
+
+}
+
+.section-tag{
+
+    display:inline-block;
+
+    color:#3B82F6;
+
+    font-size:.9rem;
+
+    letter-spacing:4px;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    margin-bottom:22px;
+
+}
+
+.section-title{
+
+    font-size:clamp(2.8rem,5vw,4.8rem);
+
+    line-height:1.05;
+
+    color:#fff;
+
+    margin-bottom:25px;
+
+    font-weight:800;
+
+}
+
+.section-description{
+
+    color:#a1a1aa;
+
+    font-size:1.1rem;
+
+    line-height:1.9;
+
+}
+
+.partners-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+}
+
+.partner-card{
+
+    height:170px;
+
+    background:#101010;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transition:.4s;
+
+    overflow:hidden;
+
+}
+
+.partner-card img{
+
+    width:150px;
+
+    filter:grayscale(100%);
+
+    opacity:.65;
+
+    transition:.4s;
+
+}
+
+.partner-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#3B82F6;
+
+    background:#151515;
+
+}
+
+.partner-card:hover img{
+
+    filter:none;
+
+    opacity:1;
+
+    transform:scale(1.08);
+
+}
+
+/*==================================
+        TABLET
+==================================*/
+
+@media(max-width:992px){
+
+.partners{
+
+    padding:110px 0;
+
+}
+
+.partners-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/*==================================
+        MOBILE
+==================================*/
+
+@media(max-width:768px){
+
+.partners{
+
+    padding:90px 0;
+
+}
+
+.section-header{
+
+    margin-bottom:60px;
+
+}
+
+.section-title{
+
+    font-size:2.3rem;
+
+}
+
+.section-description{
+
+    font-size:1rem;
+
+}
+
+.partners-grid{
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+}
+
+.partner-card{
+
+    height:130px;
+
+}
+
+.partner-card img{
+
+    width:130px;
+
+}
+
+}
