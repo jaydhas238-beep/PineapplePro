@@ -3,6 +3,7 @@
 =========================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 /* ===========================
    RESET
 =========================== */
@@ -102,6 +103,7 @@ body{
 
 }
 
+
 /* ===========================
    CONTAINER
 =========================== */
@@ -114,6 +116,7 @@ body{
 
 }
 
+
 /* ===========================
    SECTION
 =========================== */
@@ -123,6 +126,8 @@ section{
     padding:120px 0;
 
 }
+
+
 /* ===========================
    TYPOGRAPHY
 =========================== */
@@ -135,19 +140,21 @@ section{
 
     letter-spacing:3px;
 
-    font-size:.85rem;
+    font-size:15px;
 
-    margin-bottom:1rem;
+    font-weight:600;
+
+    margin-bottom:16px;
 
 }
 
 .section-title{
 
-      font-size:clamp(2rem,4vw,3.4rem);
+    font-size:20px;
 
-    font-weight:800;
+    font-weight:700;
 
-    line-height:1.15;
+    line-height:1.4;
 
     margin-bottom:20px;
 
@@ -159,9 +166,12 @@ section{
 
     color:var(--gray);
 
-    font-size:1.1rem;
+    font-size:15px;
+
+    line-height:1.8;
 
 }
+
 
 /* ===========================
    BUTTONS
@@ -183,9 +193,11 @@ section{
 
     color:var(--white);
 
-    transition:var(--transition);
+    font-size:15px;
 
     font-weight:600;
+
+    transition:var(--transition);
 
 }
 
@@ -196,6 +208,7 @@ section{
     color:var(--bg);
 
 }
+
 
 /* ===========================
    SCROLLBAR
@@ -226,6 +239,7 @@ section{
     background:#666;
 
 }
+
 
 /* ===========================
    SELECTION
