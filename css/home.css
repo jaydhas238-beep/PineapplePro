@@ -589,3 +589,177 @@
 }
 
 }
+
+/*==================================
+    TECHNOLOGY ECOSYSTEM
+==================================*/
+
+.ecosystem{
+
+    padding:140px 0;
+
+    background:#050505;
+
+}
+
+.ecosystem-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:80px;
+
+}
+
+.eco-card{
+
+    background:#101010;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:26px;
+
+    padding:45px;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
+
+}
+
+.eco-card i{
+
+    font-size:2.6rem;
+
+    color:#3B82F6;
+
+    margin-bottom:30px;
+
+    transition:.35s;
+
+}
+
+.eco-card h3{
+
+    color:#fff;
+
+    font-size:1.6rem;
+
+    margin-bottom:16px;
+
+}
+
+.eco-card p{
+
+    color:#A1A1AA;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+    flex:1;
+
+}
+
+.eco-card span{
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.eco-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#3B82F6;
+
+    background:#151515;
+
+}
+
+.eco-card:hover i{
+
+    transform:scale(1.1);
+
+}
+
+.eco-card:hover span{
+
+    color:#3B82F6;
+
+    padding-left:8px;
+
+}
+
+/*=========================
+        TABLET
+=========================*/
+
+@media(max-width:992px){
+
+.ecosystem{
+
+    padding:110px 0;
+
+}
+
+.ecosystem-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/*=========================
+        MOBILE
+=========================*/
+
+@media(max-width:768px){
+
+.ecosystem{
+
+    padding:90px 0;
+
+}
+
+.ecosystem-grid{
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+}
+
+.eco-card{
+
+    padding:35px;
+
+}
+
+.eco-card h3{
+
+    font-size:1.4rem;
+
+}
+
+.eco-card p{
+
+    font-size:.95rem;
+
+}
+
+}
