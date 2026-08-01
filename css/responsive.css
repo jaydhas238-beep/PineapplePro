@@ -1,289 +1,143 @@
-/*==================================
-        RESPONSIVE CSS
-==================================*/
-
-/* Laptop */
 @media (max-width:1200px){
 
-        @media (max-width:1200px){
+    .hero-container{
 
-    .brand-slider{
+        gap:50px;
+
+    }
+
+    .hero h1{
+
+        font-size:4.6rem;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .hero{
+
+        min-height:auto;
+
+        padding:160px 0 90px;
+
+    }
+
+    .hero-container{
+
+        grid-template-columns:1fr;
+
         gap:60px;
-    }
 
-    .brand-slider img{
-        height:36px;
-    }
-
-}
-
-}
-
-/* Tablet */
-/*==================================
-            HERO
-==================================*/
-
-@media (max-width:992px){
-
-.hero{
-
-    padding:170px 0 90px;
-
-}
-
-.hero-container{
-
-    grid-template-columns:1fr;
-
-    text-align:center;
-
-    gap:60px;
-
-}
-
-.hero-content{
-
-    order:1;
-
-}
-
-.hero-visual{
-
-    order:2;
-
-}
-
-.hero h1{
-
-    font-size:3.2rem;
-
-    line-height:1.1;
-
-}
-
-.hero p{
-
-    max-width:650px;
-
-    margin:25px auto;
-
-}
-
-.hero-buttons{
-
-    justify-content:center;
-
-}
-
-}
-
-/* Mobile */
-@media (max-width:768px){
-
-    .container{
-        width:92%;
-        max-width:100%;
-    }
-
-    section{
-        padding:80px 0;
-    }
-
-    .section-heading{
-        margin-bottom:50px;
         text-align:center;
+
     }
 
-    .section-title{
-        font-size:2.2rem;
-        line-height:1.2;
-    }
+    .hero-content{
 
-    .section-description{
-        font-size:1rem;
-        line-height:1.8;
-    }
-
-    img{
         max-width:100%;
-        height:auto;
+
     }
 
-}
+    .hero h1{
 
-@media (max-width:768px){
+        font-size:3.6rem;
 
-.hero{
+        line-height:1.05;
 
-    padding:140px 0 70px;
-
-}
-
-.hero h1{
-
-    font-size:2.3rem;
-
-}
-
-.hero p{
-
-    font-size:1rem;
-
-}
-
-.hero-buttons{
-
-    flex-direction:column;
-
-    align-items:center;
-
-    gap:15px;
-
-}
-
-.hero-buttons .btn{
-
-    width:100%;
-
-    max-width:320px;
-
-}
-
-.hero-visual{
-
-    display:none;
-
-}
-
-}
-
-@media (max-width:768px){
-
-    .trusted{
-        padding:60px 0;
     }
 
-    .trusted-title{
-        font-size:0.95rem;
-        margin-bottom:25px;
+    .hero p{
+
+        margin:25px auto 40px;
+
+        max-width:650px;
+
     }
 
-    .brand-slider{
-        gap:30px;
-        justify-content:flex-start;
-        padding-bottom:10px;
-    }
-
-    .brand-slider img{
-        height:26px;
-    }
-
-}
-/* Small Mobile */
-@media (max-width:480px){
-
-}
-
-
-/*==================================
-        RESPONSIVE NAVBAR
-==================================*/
-
-@media (max-width:992px){
-
-    .nav-links{
-
-        position:fixed;
-
-        top:0;
-        right:-100%;
-
-        width:320px;
-        height:100vh;
-
-        background:#0b0b0b;
-
-        display:flex;
-        flex-direction:column;
+    .hero-buttons{
 
         justify-content:center;
 
-        gap:30px;
-
-        padding:40px;
-
-        transition:.4s ease;
-
-        z-index:999;
-
     }
 
-    .nav-links.active{
-
-        right:0;
-
-    }
-
-    .nav-links li{
-
-        width:100%;
-
-    }
-
-    .nav-links a{
-
-        font-size:1.1rem;
-
-        display:block;
-
-        width:100%;
-
-    }
-
-    .nav-btn{
+    .hero-visual{
 
         display:none;
 
     }
 
-    .menu-toggle{
+        @media (max-width:768px){
 
-        display:flex;
+    .hero{
 
-        cursor:pointer;
+        padding:140px 0 70px;
 
-        z-index:1001;
+    }
+
+    .hero-tag{
+
+        font-size:.8rem;
+
+        letter-spacing:2px;
+
+    }
+
+    .hero h1{
+
+        font-size:2.8rem;
+
+    }
+
+    .hero p{
+
+        font-size:1rem;
+
+        line-height:1.7;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        width:100%;
+
+    }
+
+    .hero-buttons .btn{
+
+        width:100%;
+
+        max-width:320px;
 
     }
 
 }
 
-@media (max-width:992px){
+        @media (max-width:576px){
 
-    .trusted{
-        padding:70px 0;
+    .hero{
+
+        padding:120px 0 60px;
+
     }
 
-    .trusted-title{
-        font-size:1rem;
-        margin-bottom:35px;
+    .hero h1{
+
+        font-size:2.2rem;
+
     }
 
-    .brand-slider{
-        gap:45px;
-        overflow-x:auto;
-        scrollbar-width:none;
-        -ms-overflow-style:none;
+    .hero p{
+
+        font-size:.95rem;
+
     }
 
-    .brand-slider::-webkit-scrollbar{
-        display:none;
-    }
-
-    .brand-slider img{
-        height:32px;
-        flex-shrink:0;
-    }
+}
 
 }
